@@ -125,6 +125,10 @@ exports.postUpdateProfile = function(req, res, next) {
     user.profile.location = req.body.location || '';
     user.profile.website = req.body.website || '';
         user.profile.type= req.body.type || '';
+        user.profile.institution= req.body.institution || '';
+        user.profile.department= req.body.department|| '';
+        user.profile.graduation_year= req.body.graduation_year || '';
+        user.profile.cgpa= req.body.cgpa || '';
 
     user.save(function(err) {
       if (err) return next(err);

@@ -20,7 +20,11 @@ var userSchema = new mongoose.Schema({
     location: { type: String, default: '' },
     website: { type: String, default: '' },
     picture: { type: String, default: '' },
-        type: { type: String, default: '' }
+        type: { type: String, default: '' },
+                institution: { type: String, default: '' },
+                        department: { type: String, default: '' },
+                                graduation_year: { type: String, default: '' },
+                                        cgpa: { type: String, default: '' }
   },
 
   resetPasswordToken: String,

@@ -3,6 +3,7 @@ extends ../layout
 block content
   .page-header
     h3 Profile Information
+    h2 200 Credits
 
   form.form-horizontal(action='/account/profile', method='POST')
     input(type='hidden', name='_csrf', value=_csrf)
@@ -28,13 +29,26 @@ block content
       .col-sm-4
         input.form-control(type='text', name='location', id='location', value='#{user.profile.location}')
     .form-group
-      label.col-sm-2.control-label(for='website') Website
+      label.col-sm-2.control-label(for='institution') Institution
       .col-sm-4
-        input.form-control(type='text', name='website', id='website', value='#{user.profile.website}')
+        input.form-control(type='text', name='institution', id='institution', value='#{user.profile.institution}')
+        .form-group
+      label.col-sm-2.control-label(for='department') Department
+      .col-sm-4
+        input.form-control(type='text', name='department', id='department', value='#{user.profile.department}')
+        .form-group
+      label.col-sm-2.control-label(for='graduation_year') Graduation Year
+      .col-sm-4
+        input.form-control(type='text', name='graduation_year', id='graduation_year', value='#{user.profile.graduation_year}')
+        .form-group
+      label.col-sm-2.control-label(for='cgpa') CGPA
+      .col-sm-4
+        input.form-control(type='text', name='cgpa', id='cgpa', value='#{user.profile.cgpa}')    
     .form-group
       label.col-sm-2.control-label(for='gravatar') Gravatar
       .col-sm-4
         img(src="#{user.gravatar()}", class='profile', width='100', height='100')
+    .form-group
       label.col-sm-2.control-label(for='type') Type
       .col-sm-4
         label.radio.col-sm-4
@@ -44,7 +58,7 @@ block content
           input(type='radio', checked=user.profile.type=='alumni', name='type', value='alumni', data-toggle='radio')
           span Alumni
         label.radio.col-sm-4
-          input(type='radio', checked=user.profile.type=='alumni', name='type', value='faculty', data-toggle='radio')
+          input(type='radio', checked=user.profile.type=='faculty', name='type', value='faculty', data-toggle='radio')
           span Faculty
     .form-group
       .col-sm-offset-2.col-sm-4
