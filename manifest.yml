@@ -1,6 +1,6 @@
 applications: 
 - services: 
-  - hackathon-starter-db 
+  - MongoLab-3e
   host: what-next 
   disk: 1024M 
   name: what-next 
