@@ -1,9 +1,9 @@
 {
-  "name": "WhatNext?",
-  "version": "1.0",
+  "name": "hackathon-starter",
+  "version": "3.0.2",
   "repository": {
     "type": "git",
-    "url": "https://github.com/adithya321/What-Next-.git"
+    "url": "https://github.com/sahat/hackathon-starter.git"
   },
   "scripts": {
     "start": "node app.js",
