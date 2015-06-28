@@ -17,7 +17,8 @@
           a(href='/api') Help
         li(class=title=='Contact'?'active':undefined)
           a(href='/contact') Contact
-        li(input.form-control(type='text', name='search'))
+        li(class=input=='Search'?active:undefined)
+          a(href='#') Search
       ul.nav.navbar-nav.navbar-right
         if !user
           li(class=title=='Login'?'active':undefined)
