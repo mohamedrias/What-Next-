@@ -3,7 +3,7 @@
   "version": "1.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/adithya321/What-Next-"
+    "url": "https://github.com/adithya321/What-Next-.git"
   },
   "scripts": {
     "start": "node app.js",
