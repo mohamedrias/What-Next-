@@ -11,13 +11,11 @@
         | WN?
     .collapse.navbar-collapse
       ul.nav.navbar-nav
-        li(class=title=='Home'?'active':undefined)
-          a(href='/') Home
         li(class=title=='Help'?'active':undefined)
           a(href='/api') Help
         li(class=title=='Contact'?'active':undefined)
           a(href='/contact') Contact
-        .form-group
+        li.form-group
             input.form-control(type='text', placeholder="Search")
       ul.nav.navbar-nav.navbar-right
         if !user
